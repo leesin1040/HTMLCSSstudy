@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메리 크리스마스</title>
+
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/574560.png">
+    <meta property="og:image" content="https://www.fischer-information.com/en/assets/content/images/news/2019/fischer-xmas-teaser.jpg">
+    <meta property="og:title" content="최이진의 크리스마스 카드">
+    <meta property="og:description" content="2020을 마무리하며">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+
+        }
+
+        .letter-close {
+            display: block;
+        }
+        .letter-open {
+            display: none;
+
+        }
+
+        .snowman {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            background-image: url('https://media.giphy.com/media/MmToRwh0tlOMwAThKs/giphy.gif');
+            background-size: cover;
+            background-position: center;
+            margin: 100px auto 0px auto;
+            border-radius: 100px;
+
+            border: 1px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            color: brown;
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+ 
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+                font-size: 16px;
+            }
+            .snowman {
+            width: 150px;
+            height: 150px;
+            margin: 70px auto 0px auto;
+            border-radius: 100px;
+            h1 {
+                font-size: 13px;
+            }
+            .envelope {
+            margin: 150px auto 0px auto;
+        }
+}
+
+}
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_snowman() {
+            alert('앗 이걸 누르시네!')
+            window.location.href='https://leesin1040.github.io/leejinchoi/'
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어보세요!</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="snowman" onclick="go_snowman()"></div>
+        <h1>2020년 수고하셨습니다!</h1>
+        <div class="messagebox">
+            2020년<br />
+            한 해 동안 베풀어주신 사랑 감사합니다.<br />
+            새해에도 좋은 일만 가득하기를 기원합니다.<br />
+            2021년 새해에는 다같이 만나서 함께하는<br />
+            사랑이 넘치는 한 해 되길 바랍니다.<br />
+            <p class="from">2020.12.25 최이진 드림</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
